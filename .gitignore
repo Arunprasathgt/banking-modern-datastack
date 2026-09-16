@@ -1,0 +1,36 @@
+# Secrets
+.env
+**/.env
+**/profiles.yml
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# dbt-generated files
+banking_dbt/.dbt/
+banking_dbt/target/
+banking_dbt/logs/
+banking_dbt/dbt_packages/
+banking_dbt/.user.yml
+
+# Docker/runtime data
+docker/logs/
+docker/minio/data/
+docker/postgres/data/
+logs/
+
+# Generated local data
+*.parquet
+
+# GitHub Actions local cache
+.github/.cache/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Optional machine-specific Compose overrides
+docker-compose.override.yml

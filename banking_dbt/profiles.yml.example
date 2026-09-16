@@ -1,0 +1,15 @@
+banking_dbt:
+  target: dev
+
+  outputs:
+    dev:
+      type: snowflake
+      account: your_account_identifier
+      user: your_snowflake_username
+      password: your_snowflake_password
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: BANKING
+      schema: ANALYTICS
+      threads: 4
+      client_session_keep_alive: false
